@@ -3,6 +3,11 @@
  */
 ;(function($){
 
-    console.log($('script'));
+    $.fn.asd=function(){
+      console.log(this);
+      return this.append();
+    };
+
+    $('script').asd();
 
 })(jQuery);
