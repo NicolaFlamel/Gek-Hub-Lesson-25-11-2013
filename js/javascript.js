@@ -3,6 +3,6 @@
  */
 ;(function($){
 
-    console.log($('script',document.body));
+    console.log($('script'));
 
 })(jQuery);
