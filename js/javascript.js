@@ -3,12 +3,15 @@
  */
 ;(function($){
 
-    var input = $('input');
-    console.log(input.prop({value:'asd',title:'qwe'}));
-    console.log(input.prop('title',function(index,value){
-        //console.log($(this).val());
-        console.log(this.value);
-        console.log(arguments);
-    }));
+    //$('<input type="password">').appendTo('body');
+    //Создание nod-ы
+
+    $('<input type="password">')
+        .prop({
+        value: 'asd'
+        }).appendTo('body')
+    ;
+
+
 
 })(jQuery);
